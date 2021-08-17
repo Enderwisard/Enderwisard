@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="sign-in-sign-up">
+                <!-- * SIGN IN -->
+                <form class="sign-in-form">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <div class="text-b">
+                            <input type="text" name="uid-sign-in" required>
+                            <div class="placeholder">Username</div>
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <div class="text-b">
+                            <input type="password" name="pwd-sign-in" required>
+                            <div class="placeholder">Password</div>
+                            <div class="show-password-login fa fa-eye-slash"></div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Login" class="btn-login solid">
+                    <div class="mt-3" id="answer-sign-in">
+                    </div>
+                </form>
+                <!-- * SIGN UP -->
+                <form class="sign-up-form">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <div class="text-b">
+                            <input type="text" name="name-sign-up" id="name" required>
+                            <div class="placeholder">Full name</div>
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <div class="text-b">
+                            <input type="text" name="email-sign-up" id="email" required>
+                            <div class="placeholder">Email</div>
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <div class="text-b">
+                            <input type="text" name="uid-sign-up" id="uid" required>
+                            <div class="placeholder">Username</div>
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <div class="text-b">
+                            <input type="password" name="pwd-sign-up" id="pwd" required>
+                            <div class="placeholder">Password</div>
+                            <div class="show-password-sign-up fa fa-eye-slash"></div>
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <div class="text-b">
+                            <input type="password" name="pwd-repeat-sign-up" id="pwdrepeat" required>
+                            <div class="placeholder">Repeat Password</div>
+                        </div>
+                    </div>
+                    <button type="submit" name="sign-up-submit" class="btn-sign-up fa fa-arrow-right" disabled></button>
+                    <div class="mt-3" id="answer-sign-up">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- * PANELS -->
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New Here?</h3>
+                    <p>
+                    </p>
+                    <button class="btn-change transparent" id="sign-up-btn">Sign up </button>
+                </div>
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3></h3>
+                    <p>
+                    </p>
+                    <button class="btn-change transparent" id="sign-in-btn">Sign in </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="forms-container">
+            <!-- * MAIN MENU -->
+            <main class="main-menu-body">
+                <!-- * SIDEBAR -->
+                <nav class="sidebar">
+                    <div class="logo_content">
+                        <div class="logo">
+                            <i class="fa fa-gg"></i>
+                            <div class="logo_name">END_APP</div>
+                        </div>
+                        <i class="fa fa-bars" id="btn_sidebar"></i>
+                    </div>
+                    <ul class="nav_list">
+                        <li>
+                            <a href="#home_content" id="home_content">
+                                <i class="fa fa-home"></i>
+                                <span class="links_name">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#user_content" id="user_content">
+                                <i class="fa fa-user"></i>
+                                <span class="links_name">User</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#messages_content" id="messages_content">
+                                <i class="fa fa-paper-plane-o"></i>
+                                <span class="links_name">Messages</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#photos_content" id="photos_content">
+                                <i class="fa fa-camera"></i>
+                                <span class="links_name">Camera</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="profile_content">
+                        <div class="profile">
+                            <div class="profile_details" id="profile_detail">
+                                <div class="uid_email">
+                                </div>
+                            </div>
+                            <i class="fa fa-sign-in" id="log_out"></i>
+                        </div>
+                    </div>
+                </nav>
+                <!-- * SIDEBAR OPTIONS -->
+                <section class="home_content">
+                    <div class="text_home">Home</div>
+                    <div class="show_msg">
+                    </div>
+                </section>
+                <section class="user_content">
+                    <div class="text_home">User</div>
+                </section>
+                <section class="messages_content">
+                    <form class="send_msg">
+                        <div class="text_home">Messages</div>
+                        <div class="wrapper_msg">
+                            <i class="fa fa-address-book"></i>
+                            <div class="text-b" id="show_list">
+                                <input list="uid_list" name="uid-msg-to" id="uid_msg_to" required>
+                                <datalist id='uid_list'>                                    
+                                </datalist>
+                                <div class="placeholder">Select contact</div>
+                            </div>
+                            <i class="fa fa-commenting"></i>
+                            <div class="text-b">
+                                <input hidden>
+                                <textarea name="msg-text" id="msg-text" required></textarea>
+                                <div class="placeholder">Type a message</div>
+                            </div>
+                        </div>
+                        <input type="submit" value="Send" class="btn-send solid">
+                        <div class="mt-3" id="answer-msg"></div>
+                    </form>
+                </section>
+                <section class="photos_content">
+                    <div class="text_home">Camera</div>
+                    <div class="wrapper_photos">
+                        <form class="take_photo" action="#">
+                            <input class="file_input" accept="image/*" capture="camera" type="file" hidden>
+                            <i class="fa fa-picture-o"></i>
+                            <p>Take a picture</p>
+                                <img class="show_photo" src="" id="show_photo">
+                        </form>
+                    </div>
+                    <div class="wrapper_btn">
+                        <button class="btn_find">Find your location</button>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <script src="js/main.js"></script>
+    </div>
+</body>
+</html>
