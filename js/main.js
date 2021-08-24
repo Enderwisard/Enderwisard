@@ -475,3 +475,12 @@ btn_log_out.addEventListener("click", function() {
     delete_msg();
   }
 })
+
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('../sw.js').then(() => {
+      console.log('Service Worker Registered')
+    })
+  })
+}
